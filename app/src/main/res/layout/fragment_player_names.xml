@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PlayerNames">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/first_player"/>
+            <EditText
+                android:id="@+id/edt_name1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edit_text_style"
+                android:textAlignment="center"
+                android:hint="First player name"
+                android:inputType="textCapWords"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/second_player"/>
+            <EditText
+                android:id="@+id/edt_name2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_style"
+                android:inputType="textCapWords"
+                android:hint="Second player name"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:background="@drawable/button_style"
+            android:text="Play"
+            android:textSize="30sp"
+            android:textColor="@color/primaryTextColor"
+            android:padding="30dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>
